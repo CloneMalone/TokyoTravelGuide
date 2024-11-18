@@ -1,0 +1,278 @@
+
+/* Proper box sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img, video {
+    display: block;
+    max-width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles for Mobile Viewport */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Header */
+#website-header {
+    font-family: "Ga Maamli", sans-serif;
+    text-align: center;
+    margin-top: .5em;
+    font-size: 2.3em;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 1px solid black;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 3%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+.mobile a {
+    display: block;
+    margin: 0 auto 5% auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    border-radius: 8px;
+    padding: 15px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.mobile p, .mobile a {
+    margin-top: 5%;
+}
+
+#mobile-attractions p {
+    text-align: left;
+    font-style: normal;
+}
+
+/* Form Styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: aliceblue;
+    padding: 2%;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: black;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* Media Query: Tablet-Desktop Viewport */
+@media screen and (min-width: 705px) {
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+    }
+
+    nav li a {
+        font-size: .8em;
+    }
+
+    /* Tablet Viewport: Style rules for main area */
+    .figure-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .frame {
+        position: relative;
+        max-width: 450px;
+        margin: 2% auto;
+    
+    }
+
+    .pic-text {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+    }
+
+    th {
+        background-color: pink;
+        color: black;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: aliceblue;
+    }
+
+    
+}
+
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+
+    }
+
+    nav li a {
+        margin: 0 2em 0 2em;
+    }
+
+    table {
+        width: 80%;
+    }
+
+        
+}

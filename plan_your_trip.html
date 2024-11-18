@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <!-- Tokyo Travel Guide Header -->
+        <header>
+            <h1 id="website-header">Tokyo Travel Guide</h1>
+        </header>
+
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="top_attractions.html">Top Attractions</a></li>
+                <li><a href="plan_your_trip.html">Plan Your Trip</a></li>
+                <li><a href="experience_tokyo.html">Experience Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content of the page -->
+        <main>
+
+            <h2>Customize Your Tokyo Adventure</h2>
+            <form>
+                <!-- Personal info fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <!-- Trip preferences fieldset -->
+                <fieldset>
+                    <legend>Trip Preferences</legend>
+                    <label for="travel-dates">Travel Dates:</label>
+                    <input type="date" id="travel-dates" name="travel-dates" required>
+
+                    <label for="interests">Interests:</label>
+                    <select id="interests" name="interests">
+                        <option value="culture">Culture</option>
+                        <option value="food">Food</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="nightlife">Nightlife</option>
+                        <option value="nature">Nature</option>
+                    </select>
+
+                    <label for="budget">Preferred Budget:</label>
+                    <input type="number" id="budget" name="budget" placeholder="Enter amount in USD" required>
+
+                    <label for="requests">Special Requests:</label>
+                    <textarea id="requests" name="requests" rows="4" placeholder="Any additional requests"></textarea>
+                </fieldset>
+
+                <!-- Buttons -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:benjamin.terzic@southeasttech.edu">benjamin.terzic@southeasttech.edu</a></p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
